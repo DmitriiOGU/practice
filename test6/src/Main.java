@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main  {
-    private static Solution solution = new Solution();
+public class Main {
+
 
 
     public static void main(String[] args)throws IOException {
@@ -13,17 +13,18 @@ public class Main  {
         Scanner scanner1 = new Scanner(new File("input1.txt"));
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         scanner1.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        String s1=scanner.nextLine();
-        solution.setS(s1);
-        System.out.println(s1);
+        String S=scanner.nextLine();
+        Solution solution = new Solution(S);
+        System.out.println(S);
         System.out.println();
         while(scanner1.hasNext()) {
             String s = scanner1.nextLine();
             System.out.println();
             solution.setfunc(s);
             System.out.println(s);
-            System.out.println(solution.getS());
+            solution.GetRes();
         }
+
 	    scanner.close();
         scanner1.close();
     }
