@@ -2,6 +2,7 @@ package com.company;
 
 public class Paste implements Command {
     //Constructor
+
     Paste(int K){
         this.K=K;
         Changeble=new String();
@@ -33,5 +34,6 @@ public class Paste implements Command {
     public void Undo(){
         buf.Set_Changeble(Changeble.substring(0,K-buffer.length())+Changeble.substring(buffer.length()));
     }
+
 
 }

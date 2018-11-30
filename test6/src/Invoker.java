@@ -1,6 +1,8 @@
 package com.company;
 
+
 import java.lang.reflect.Constructor;
+
 import java.util.ArrayList;
 
 
@@ -31,6 +33,7 @@ public class Invoker {
     public void ShowTheResult(){
         System.out.println(Buf.Get_Changeble());
     }
+
 
 
 }

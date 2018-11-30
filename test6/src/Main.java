@@ -1,8 +1,10 @@
+
 package com.company;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+
 
 
 public class Main {
@@ -12,11 +14,13 @@ public class Main {
         //Creating classes
         Invoker invoker =new Invoker();
         //Creating scanner
+
         Scanner scanner = new Scanner(new File("input.txt")) ;
         Scanner scanner1 = new Scanner(new File("input1.txt"));
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         scanner1.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         String S=scanner.nextLine();
+
         //reading start pos
         System.out.println(S);
         invoker.SetS(S);
@@ -28,6 +32,7 @@ public class Main {
             invoker.StoreCommand(Parser.setfunc(s));
             System.out.println(s);
             invoker.ShowTheResult();
+
         }
 
 	    scanner.close();

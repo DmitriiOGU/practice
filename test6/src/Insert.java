@@ -2,12 +2,15 @@ package com.company;
 
 public class Insert implements Command{
     //Constructor
+
     Insert(String s21,int K){
         this.K=K;
+
         this.s21=s21;
     }
     //Variables
     private int K;
+
     private Buf buf;
     private String Changeble,s21;
     private Stack stack;

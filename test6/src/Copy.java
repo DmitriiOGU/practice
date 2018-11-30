@@ -2,6 +2,7 @@ package com.company;
 
 public class Copy implements Command {
     //Constructor
+
     Copy(int K,int J){
         this.K=K;
         this.J=J;
@@ -33,5 +34,6 @@ public class Copy implements Command {
     public void Undo(){
         buf.Set_Buffer(buffer);
     }
+
 
 }
