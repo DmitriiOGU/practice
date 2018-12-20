@@ -3,7 +3,6 @@ package com.company;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 public class Parser {
     private static Command command;
     /*/////Void block
@@ -139,8 +138,6 @@ public class Parser {
               throw new DIM_Exception("Bad command");
 
             return command;
-
-
 
     }
 }

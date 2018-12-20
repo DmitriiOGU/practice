@@ -33,3 +33,4 @@ public class Delete implements Command {
         buf.Set_Changeble(Changeble);
     }
 }
+

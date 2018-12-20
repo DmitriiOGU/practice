@@ -43,6 +43,4 @@ public class Invoker {
     public void ShowTheResult(){
         LOGGER.log(Level.SEVERE,Buf.Get_Changeble());
     }
-
-
 }

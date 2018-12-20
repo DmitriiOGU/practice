@@ -2,6 +2,7 @@ package com.company;
 
 public class Copy implements Command {
     //Constructor
+
     Copy(int K,int J){
         this.K=K;
         this.J=J;
